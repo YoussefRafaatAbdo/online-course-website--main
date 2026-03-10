@@ -28,4 +28,4 @@ jobs:
             docker stop course-site || true
             docker rm course-site || true
             docker build -t course-site .
-            docker run -d -p 80:80 --restart always --name course-site course-site
+            docker run -d -p 8080:80 --restart always --name course-site course-site
